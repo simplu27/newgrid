@@ -12,16 +12,32 @@
 
 /*.box is a class for testing grids*/
 
-.box {
+body {
+	color: #6c5f54;
+}
+
+[class^=box-] {
 	width: 100%;
 	min-height: 20px;
-	background: #EFEFEF;
-	color: #AFAFAF;
+	background: #EAE9E1;
+	color: #908A82;
 	font-size: 12px;
 	padding: 5px;
 }
 
-.box.tall {min-height: 50px;}
+.box-20 {min-height: 20px;}
+.box-30 {min-height: 30px;}
+.box-40 {min-height: 40px;}
+.box-50 {min-height: 50px;}
+.box-60 {min-height: 60px;}
+.box-60 {min-height: 60px;}
+.box-70 {min-height: 70px;}
+.box-70 {min-height: 70px;}
+.box-80 {min-height: 80px;}
+.box-90 {min-height: 90px;}
+.box-100 {min-height: 100px;}
+
+h2 {color: #615532;}
 
 /*Section class: .container*/
 
