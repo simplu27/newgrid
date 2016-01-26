@@ -1,0 +1,73 @@
+/*
+	NewGrid.loc styles
+
+	<div class="container">
+		<div class="row">
+			<div class="col-1-3">
+				<div class="box">Box</div>
+			</div><!-- col-1-3 -->
+		</div><!-- row -->
+	</div><!-- container -->
+*/
+
+/*.box is a class for testing grids*/
+
+.box {
+	width: 100%;
+	min-height: 20px;
+	background: #EFEFEF;
+	color: #AFAFAF;
+	font-size: 12px;
+	padding: 5px;
+}
+
+.box.tall {min-height: 50px;}
+
+/*Section class: .container*/
+
+.container {width: 100%;}
+
+/*Center content*/
+
+.wrap {
+	max-width: 840px;
+	margin: 0 auto;
+}
+
+/*row is a wrapper for columns*/
+
+.row:before,
+.row:after {content: " "; display: table; }
+.row:after {clear: both; }
+
+.row {
+	display: block;
+	width: 100%;
+}
+
+/* Percentage columns*/
+
+[class^=col-] { float: left; padding: 10px;}
+
+.col-100{ width: 100%;}			.col-90 { width: 90%;}
+.col-80 { width: 80%;}			.col-75 { width: 75%;}
+.col-70 { width: 70%;}			.col-66 { width: 66.6666%;}
+.col-60 { width: 60%;}			.col-50 { width: 50%;}
+.col-40 { width: 40%;}			.col-33 { width: 33.3333%;}
+.col-30 { width: 30%;}			.col-25 { width: 25%;}
+.col-20 { width: 20%;}			.col-10 {width: 10%;}
+
+/* Golden Ratio Columns */
+.col-gb 	{width: 61.80339887499%;} 	/* Golden Big */
+.col-gs 	{width: 38.19660112501%;}	/* Golden Small */
+
+@media screen and (max-width: 640px) {
+	.row {padding: 10px 20px;}
+	[class^=col-] {width: 100% !important; padding: 10px 0;}
+} /* media end */
+
+/* Text helpers */
+
+.align-center {text-align: center;}
+.align-left {text-align: left;}
+.align-right {text-align: right;}
