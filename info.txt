@@ -1,0 +1,4 @@
+New Grid CSS
+
+Inspiration:
+	http://www.sitepoint.com/understanding-css-grid-systems/
