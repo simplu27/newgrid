@@ -32,6 +32,7 @@
 .wrap {
 	max-width: 840px;
 	margin: 0 auto;
+	padding: 0 20px;
 }
 
 /*row is a wrapper for columns*/
@@ -62,8 +63,13 @@
 .col-gs 	{width: 38.19660112501%;}	/* Golden Small */
 
 @media screen and (max-width: 640px) {
-	.row {padding: 10px 20px;}
-	[class^=col-] {width: 100% !important; padding: 10px 0;}
+
+	[class^=col-] {width: 100% !important; padding: 10px;}
+
+	[class^=s-] {float: left; padding: 10px;}
+	.s-50 {width: 50% !important; } 
+	.s-33 {width: 33.333% !important; } 
+
 } /* media end */
 
 /* Text helpers */
@@ -71,3 +77,12 @@
 .align-center {text-align: center;}
 .align-left {text-align: left;}
 .align-right {text-align: right;}
+
+/* Layout helper */
+
+.break {
+	display: block;
+	/*height: 40px;*/
+	padding: 20px 0;
+	width: 100%;
+}
