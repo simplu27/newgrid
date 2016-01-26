@@ -86,3 +86,22 @@
 	padding: 20px 0;
 	width: 100%;
 }
+
+
+/* Push and pull */
+
+.push-50 {
+	margin-left: 50%;
+}
+
+.pull-50 {
+	margin-left: -100%;
+}
+
+
+
+
+
+
+
+
