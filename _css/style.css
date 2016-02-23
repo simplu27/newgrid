@@ -10,19 +10,71 @@
 	</div><!-- container -->
 */
 
-/*.box is a class for testing grids*/
+/* .box is a class for testing grids */
 
 body {
 	color: #6c5f54;
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.5;
 }
+
+
+/* ================================================
+	TYPOGRAPHY
+=================================================== */
+
+h1, h2, h3, h4, h5 {
+	line-height: 1.3;
+	margin-bottom: 20px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+
+h1, .like-h1 { font-size: 50px;}
+h2, .like-h2 { font-size: 36px;}
+h3, .like-h3 { font-size: 24px; font-weight: 400;}
+h4, .like-h4 { font-size: 18px; font-weight: 700;}
+h5, .like-h5 { font-size: 14px; font-weight: 700; text-transform: uppercase;}
+
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child {margin-top: 10px;}
+
+/* Anchor and links */
+
+a {color: #F79440;}
+a:hover {color: #DF700D;}
+
+/* Text helpers */
+
+.align-center {text-align: center;}
+.align-left {text-align: left;}
+.align-right {text-align: right;}
+
+.uppercase {text-transform: uppercase;}
+.bold {font-weight: bold;}
+.italic {font-style: italic;}
+.underline {text-decoration: underline;}
+
+kbd {
+	background: #848484;
+	color: #FFF;
+	padding: 2px 10px 2px 6px;
+	border-radius: 2px;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .4);
+}
+
 
 [class^=box-] {
 	width: 100%;
-	min-height: 20px;
+	min-height: 40px;
 	background: #EAE9E1;
 	color: #908A82;
-	font-size: 12px;
+	/*font-size: 16px;*/
 	padding: 5px;
+	border: 1px solid #EFEFEF;
 }
 
 .box-20 {min-height: 20px;}
@@ -37,11 +89,16 @@ body {
 .box-90 {min-height: 90px;}
 .box-100 {min-height: 100px;}
 
-h2 {color: #615532;}
-
 /*Section class: .container*/
 
-.container {width: 100%;}
+.container {width: 100%; padding: 30px 0;}
+.container.dark {background: #F9F9F9; padding: 30px 0;}
+
+.container.super-dark {
+	background: #605A58;
+	color: #DFD6D1;
+	/* color: #F9F9F9; */
+}
 
 /*Center content*/
 
@@ -69,7 +126,7 @@ h2 {color: #615532;}
 
 /* Percentage columns*/
 
-[class^=col-] { float: left; padding: 10px;}
+[class^=col-] { float: left; padding: 15px;}
 
 .col-100{ width: 100%;}			.col-90 { width: 90%;}
 .col-80 { width: 80%;}			.col-75 { width: 75%;}
@@ -93,12 +150,6 @@ h2 {color: #615532;}
 
 } /* media end */
 
-/* Text helpers */
-
-.align-center {text-align: center;}
-.align-left {text-align: left;}
-.align-right {text-align: right;}
-
 /* Layout helper */
 
 .break {
@@ -106,6 +157,25 @@ h2 {color: #615532;}
 	/*height: 40px;*/
 	padding: 20px 0;
 	width: 100%;
+}
+
+.extra-padding {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.no-padding {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+blockquote,
+.blockquote {
+	border-left: 4px solid #DF700D;
+	display: inline-block;
+	padding: 15px 15px 15px 30px;
+	background: #FFF7EF;
+	margin: 0;
 }
 
 
@@ -150,6 +220,7 @@ h2 {color: #615532;}
 
 .gallery-2 .item {width: 50%;}
 .gallery-3 .item {width: 33.333%;}
+.gallery-4 .item {width: 25%;}
 
 .img-desc {
 	display: block;
